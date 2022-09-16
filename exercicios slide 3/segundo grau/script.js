@@ -1,11 +1,15 @@
-var n1 = document.querySelector('#n1')
-var n2 = document.querySelector('#n2')
-var n3 = document.querySelector('#n3')
-var resultado = document.querySelector('#s1')
-var resultado2 = document.querySelector('#s2')
+var a=1; var b=2; var c=-3;
+var poten = b**2
+var mult = -4 * a * c
+var delta = poten + mult
+var raiz = parseInt(Math.sqrt(delta));
+console.log("RAIZ" +raiz);
+var mult1 = -b - raiz
+var mult2 = -b + raiz
+var div = 2 * a
+var x1 = mult1 / div
+var x2 = mult2 / div
 
-function chamar(){
+console.log("X1 =" + x1);
 
-   resultado.innerHTML = ((parseFloat(n2.value) ** 2) - (4 * parseFloat(n1.value) * parseFloat(n3.value)))
-   resultado2.innerHTML = (- parseFloat(n2.value) + parseFloat(Math.sqrt(resultado.value))) / (2 * n1.value)
-}
+console.log("X2 =" +x2);
